@@ -1,0 +1,152 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    max-width: 1500px;
+    margin: auto;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.w3-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.w3-padding-large {
+    padding: 16px;
+}
+
+.w3-border {
+    border: 1px solid #fff;
+}
+
+.w3-wide {
+    letter-spacing: 8px;
+}
+
+.w3-text-light-grey {
+    color: #f1f1f1;
+}
+
+/* Navbar styles */
+.w3-bar {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.w3-button {
+    padding: 8px 16px;
+}
+
+/* Content styles */
+.w3-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.w3-margin-top {
+    margin-top: 20px;
+}
+
+.w3-padding-large {
+    padding: 16px;
+}
+
+/* Contact form styles */
+form {
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+form h3 {
+    text-align: center;
+}
+
+form hr {
+    border: none;
+    border-top: 1px solid #333;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkgrey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .w3-display-bottommiddle {
+        bottom: 0;
+    }
+
+    .w3-bar {
+        position: relative;
+        bottom: auto;
+        transform: none;
+    }
+
+    .w3-hide-large {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .w3-hide-small {
+        display: none;
+    }
+
+    .w3-hide-medium {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .w3-hide-medium {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .w3-hide-small {
+        display: none;
+    }
+}

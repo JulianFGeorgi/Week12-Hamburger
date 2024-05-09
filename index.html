@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Julian Georgi Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  /* Define styles for the navigation menu */
+  .nav-menu {
+    display: none; /* Initially hide the navigation menu */
+  }
+  .nav-menu.active {
+    display: block; /* Display the navigation menu when active */
+  }
+</style>
+</head>
+<body>
+
+  <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button>
+<p id="demo"></p>
+
+<p id="cake"></p>
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="assets/milad-fakurian-9gpHxBH5Tc4-unsplash.jpg" alt="milad-fakurian" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Julian Georgi</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Julian Georgi</h5>
+    <h3 class="w3-hide-medium w3-hide-small">Graphic Designer</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <div class="hamburger">☰</div> <!-- Hamburger menu icon -->
+    <nav class="nav-menu">
+      <a href="#" class="w3-bar-item w3-button nav-link">Home</a>
+      <a href="#about" class="w3-bar-item w3-button nav-link">Who?</a>
+      <a href="#portfolio" class="w3-bar-item w3-button nav-link">Portfolio</a>
+      <a href="#contact" class="w3-bar-item w3-button nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#contact" class="w3-bar-item w3-button">Who?</a>
+  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+<div class="w3-content w3-padding-large w3-margin-top" id="Who?">
+<p>Julian F. Georgi is 20 years old and currently is going to <b>City tech</b> to learn about graphic design and COMD. This portfolio is a small compilation of pieces he has selected to present to you. Hope you Enjoy!</p>
+  <!-- Images (Portfolio) -->
+  <img src="assets/1100-Project copy.png" alt="1100-Project" class="w3-image" width="1000" height="500">
+  <img src="assets/IMG_1204.jpg" alt="IMG_1204" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="assets/Project 3 at 300ppi_ copy.png" alt="Project" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="assets/IMG_1202.jpg" alt="IMG_1202" class="w3-image w3-margin-top" width="1000" height="500">
+
+  <!-- Contact -->
+  <div style="background-color: lightblue; padding: 20px; margin-top: 20px;">
+    <h3 style="text-align: center;">Contact</h3>
+    <hr>
+    <p>Interested in what you see? Want to get in contact with Mr.Georgi? Use this contact form below and leave a message.</p>
+
+    <form id="combined-form" method="post" action="https://formsubmit.co/fba00d0fead1c3785bfc6047d2973b96">
+        <div style="margin-bottom: 10px;">
+            <label for="name">Name</label>
+            <input type="text" required name="name" id="name" style="width: 100%; box-sizing: border-box; padding: 8px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="email" style="width: 100%; box-sizing: border-box; padding: 8px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="message">Message</label>
+            <textarea required name="message" id="message" rows="6" maxlength="3000" style="width: 100%; box-sizing: border-box; padding: 8px;"></textarea>
+        </div>
+        <button type="submit" style="width: 100%; padding: 10px; background-color: darkgrey; color: white; border: none; cursor: pointer;">Send Message</button>
+    </form>
+    <br>
+</div>
+
+
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<script>
+  // JavaScript Code
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }));
+</script>
+</body>
+</html>
